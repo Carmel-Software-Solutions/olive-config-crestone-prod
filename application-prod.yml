@@ -1,0 +1,80 @@
+# Move this to user profile. Fetch the locale from user preference rather than this config
+olive-locale:
+  user-timezone: Asia/Calcutta
+  
+olive:
+  application:
+    name: "ASSETMINE" # This will be used for printing the application name in the front end (e.g. html page title)
+    host: "http://localhost:7070/api/olive/1.0/icrm/file/"
+
+assetmine:
+  ekyc-icici-credetials: UEhEUnhTQUdGa3dGZ3hyQVE2Q2lwSUFFT0pnT1lMV0E6Tjl3TFYwellrUERrUVZtRw==
+  client-id: XeKlgYrzyGMcnTkTrzQyStSbKiLhEAGw
+  consumer-key: lb_LdbGj
+  client-secret: Qm9ESzqCCMFSHV8C
+  msg-99:
+   auth-key : 425051AX0yOrL0rmxR667929e8P1
+   template-id : 6679283cd6fc05568d047a52 
+bse-star-mf:
+  apikey: VmxST1UyRkhUbkpOVldNOQ== 
+
+two-factor:
+  api-key: b3d3355a-199a-11eb-b380-0200cd936042
+  sandbox-otp: 12345
+pinnacle:
+  api-key: 2ef146-89a43b-4cd913-f24499-fe25f2
+  max-otp-attempt: 3
+  # templates:
+    # phone-onboarding: olive-phone-onboarding
+    # forgot-password: olive-forgot-password
+
+auth:
+  org-id: "c79ecc86-20b7-44b2-ab70-3db893e37725"
+  client-id: "olive@carmelsolutions"
+  grant-type: "password"
+    
+
+spring:
+  security:
+    user:
+      name: root
+      password: P@ssw0rd
+  servlet:
+    multipart:
+      max-file-size: 30MB 
+      
+upload-path:
+  profile-pic-path: /Users/ronaldphilip/olive-uploads      
+
+logging:
+  level:
+    root: info
+    org:
+      hibernate:
+        type: info
+        SQL: debug
+    com:
+      carmel:
+        olive: trace
+
+  pattern:
+    console: '%d{"yyyy/MM/dd HH:mm:ss,SSS"} [%p] [%t] %M\(%F:%L\) - %msg%n'
+
+  logback:
+    rollingpolicy:
+      clean-history-on-start: false
+      max-file-size: 5MB
+eform:
+  pdf-store: "/home/carmel/eForms/"
+  pdf-templates: "/home/carmel/eForms/pdf-templates/"
+  
+carmel:
+  temp-files-upload-path: "E:/uploads/"
+  docs-path: "/uploads/"
+  # mention size always in kb
+  docs-allowed-size: 2048
+  reports-template-path: "E:/reports-template/"
+  nav-raw-file: "E:/nav_raw_file/"
+  investor-inception-permissionTemplate: "18cb56b4-6425-4ea3-a8de-27687d533425"
+
+  

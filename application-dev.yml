@@ -4,7 +4,7 @@ olive-locale:
   
 olive:
   application:
-    name: "ASSETMINE" # This will be used for printing the application name in the front end (e.g. html page title)
+    name: "CrestOne" # This will be used for printing the application name in the front end (e.g. html page title)
     host: "http://localhost:7070/api/olive/1.0/icrm/file/"
 
 assetmine:
